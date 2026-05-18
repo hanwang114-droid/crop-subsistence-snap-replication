@@ -1,0 +1,35 @@
+\begin{table}[!htbp]
+\centering
+\caption{Main Calibration Results and Early-Year Robustness}
+\label{tab:main_calibration_results}
+\begin{threeparttable}
+\small
+\begin{tabular}{lccc}
+\toprule
+Object & 1960 only & Baseline: 1960, 1970 & 1960, 1970, 1980 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Calibrated Parameters}} \\
+Common preference parameter, $\hat\alpha$ & 0.0076 & 0.0067 & 0.0067 \\
+Mean calibrated subsistence index, $\hat{\bar a}_s$ & 0.0160 & 0.0162 & 0.0154 \\
+Median calibrated subsistence index, $\hat{\bar a}_s$ & 0.0114 & 0.0112 & 0.0115 \\
+Early calibration years & 1960 & 1960, 1970 & 1960, 1970, 1980 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Matching Results}} \\
+Mean Soft-DTW matching score & 90.50 & 90.50 & 90.50 \\
+Median Soft-DTW matching score & 97.43 & 97.43 & 97.43 \\
+Mean RMSE & 0.0091 & 0.0088 & 0.0086 \\
+Selected states, matching score $>90\%$ & 38 & 38 & 38 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Sample and Estimation}} \\
+Calibrated states & 48 & 48 & 48 \\
+State-year observations & 288 & 288 & 288 \\
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}
+\footnotesize
+\item Notes: The calibration uses raw USDA--ERS state labor productivity, defined as agricultural output quantity divided by labor input quantity, rather than a within-state 1960-normalized productivity series. The baseline calibration recovers $\bar a_s(\alpha)$ using the 1960 and 1970 calibration moments. The adjacent columns report robustness checks using only 1960 and using 1960, 1970, and 1980. In all columns, the common parameter $\hat\alpha$ is chosen to minimize full-panel squared prediction error. Conditional on each candidate $\alpha$, $\bar a_s(\alpha)$ is recovered analytically using the indicated early calibration moments and the corresponding raw productivity values. Soft-DTW is computed only after calibration.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{table}
