@@ -4,7 +4,7 @@
 
 This GitHub repository contains the public-facing replication materials for the paper:
 
-> **Cash-Crop Specialization, Subsistence Dependence, and SNAP Participation Rates Across U.S. States**
+> **Structural Transformation Beyond Productivity: Subsistence Organization and Agricultural Commercialization in the United States**
 
 The repository is designed as a reproducibility archive for the project. It provides the analysis code, data-source documentation, and instructions needed to reconstruct the replication workflow.
 
